@@ -6,18 +6,19 @@
 
 <header class="su-masthead su-masthead--right">
   <section>
-    {%- include "@saa_victoria_subtheme/components/lockup/saa--lockup.html.twig" with { modifier_class : "su-lockup--option-a", line1: site_name } -%}
-    {%- if page.search -%}
-      {{ page.search }}
-    {%- endif -%}
-    {%- if page.menu -%}
-      {{ page.menu }}
-    {%- endif -%}
+  {%- if page.header -%}
+    {{ page.header }}
+  {%- endif -%}
+  {%- if page.search -%}
+    {{ page.search }}
+  {%- endif -%}
+  {%- if page.menu -%}
+    {{ page.menu }}
+  {%- endif -%}
   </section>
 </header>
 
-<div class="page-content">
-  <a name="page-content" id="page-content" tabindex="-1" class="visually-hidden focusable">Page Content</a>
+<div class="page-content" id="page-content">
   {{ page.content }}
 </div>
 
