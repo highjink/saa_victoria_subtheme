@@ -122,6 +122,7 @@ class Search extends React.Component {
           value={this.state.value}
         />
         <Autosuggest
+          aria-label="Associates Name Search Input"
           suggestions={suggestions}
           onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
           onSuggestionsClearRequested={this.onSuggestionsClearRequested}
